@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
+
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70">
 
   <!-- Navbar -->
@@ -58,14 +59,13 @@
     <div class="card border-0 shadow-sm rounded-4 p-4">
       <div class="row g-3 align-items-center">
 
-        <!-- Profile Icon -->
+
+        <!-- Profile Photo -->
         <div class="col-md-3 text-center">
-          <div
-            class="rounded-circle shadow-sm bg-primary text-white d-flex justify-content-center align-items-center mx-auto"
-            style="width: 100px; height: 100px; font-size: 40px;">
-            <i class="bi bi-person-circle"></i>
-          </div>
+          <img src="images/profile.png" alt="Profile Photo" class="rounded-circle shadow-sm mx-auto d-block"
+            style="width: 250px; height: 250px; object-fit: cover;" />
         </div>
+
 
         <!-- About Text -->
         <div class="col-md-9">
@@ -102,214 +102,8 @@
 </section>
 
 
-<!-- Modal: SOP Management App -->
-<div class="modal fade" id="modalSOP" tabindex="-1" aria-labelledby="modalSOPLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content border-0 rounded shadow">
-      <div class="modal-header bg-primary text-white">
-        <h5 class="modal-title" id="modalSOPLabel">Standard Operating Procedure Management App</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-<div class="modal-body p-4">
-  <img src="images/project2b.png" class="img-fluid rounded mb-3" alt="SOP App Screenshot" />
-
-  <p><strong>Overview:</strong><br>
-    A secure, role-based web platform for managing SOPs, approvals, version history, and user acknowledgment within
-    research environments.
-  </p>
-
-  <ul class="mb-3">
-    <li>Role-based access: Admin, HOD, Officer, Guest, etc.</li>
-    <li>Upload and approve SOPs with version control</li>
-    <li>Assign SOPs to specific users and track acknowledgments</li>
-    <li>Amendment management with two-stage review and closure</li>
-    <li>Dashboard with SOP stats and user task tracking</li>
-    <li>Audit trail and Excel export of logs</li>
-  </ul>
-
-  <p><strong>Built with:</strong><br>
-    Flask (Python), SQLite, Jinja2, Bootstrap 5, SQLAlchemy, SweetAlert, HTML/CSS
-  </p>
-
-  <a href="https://github.com/WilliamDormechele/sop_app" target="_blank" class="btn btn-outline-primary">
-    🔗 View on GitHub
-  </a>
-</div>
-
-    </div>
-  </div>
-</div>
-
-<!-- Modal: REDCap Integration -->
-<div class="modal fade" id="modalREDCap" tabindex="-1" aria-labelledby="modalREDCapLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content border-0 rounded shadow">
-      <div class="modal-header bg-success text-white">
-        <h5 class="modal-title" id="modalREDCapLabel">REDCap + SMS Integration</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-<div class="modal-body p-4">
-  <img src="images/project2.jpg" class="img-fluid rounded mb-3" alt="REDCap Integration Screenshot" />
-  <p><strong>Overview:</strong><br>
-    A backend integration that connects REDCap survey submissions with the Hubtel SMS API to automate real-time SMS
-    notifications for research participants.
-  </p>
-
-  <ul class="mb-3">
-    <li>Connects REDCap via API to Hubtel SMS platform</li>
-    <li>Triggers SMS alerts when form is submitted or updated</li>
-    <li>Flexible message templates with phone field mapping</li>
-    <li>Logs all messages sent for monitoring</li>
-  </ul>
-
-  <p><strong>Building with:</strong><br>
-    Python, REDCap API, Hubtel API, JSON, Flask
-  </p>
- <a href="#" class="btn btn-outline-warning disabled">Under Development</a> 
-<!-- <a href="https://github.com/WilliamDormechele/REDCap" target="_blank" class="btn btn-outline-success">
-    🔗 View on GitHub
-  </a> -->
-</div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal: IRB Portal -->
-<div class="modal fade" id="modalIRB" tabindex="-1" aria-labelledby="modalIRBLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content border-0 rounded shadow">
-      <div class="modal-header bg-warning text-white">
-        <h5 class="modal-title" id="modalIRBLabel">Research Ethics Portal</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-
-<div class="modal-body p-4">
-  <img src="images/project3.jpg" class="img-fluid rounded mb-3" alt="IRB Portal Screenshot" />
-
-  <p><strong>Overview:</strong><br>
-    A full-featured IRB portal for managing research protocol submissions, reviewer workflows, board approvals, and
-    ethical clearance reporting.
-  </p>
-
-  <ul class="mb-3">
-    <li>Submit, review, and approve research protocols</li>
-    <li>Reviewer dashboards with deadlines and PDF export</li>
-    <li>Admin tools for comment collation and resolution tracking</li>
-    <li>Custom audit trail for decisions, edits, and reminders</li>
-    <li>Email notifications for re-reviews and submissions</li>
-  </ul>
-
-  <p><strong>Building with:</strong><br>
-    Flask, SQLite, SQLAlchemy, Jinja2, HTML/CSS, Bootstrap 5
-  </p>
-
-<!--  <a href="#" class="btn btn-outline-warning disabled">Under Development</a> -->
-    <a href="https://github.com/WilliamDormechele/IRB-Portal" target="_blank" class="btn btn-outline-success">
-      🔗 View on GitHub
-    </a>
-</div>
-
-    </div>
-  </div>
-</div>
-
-<!-- Modal: EDC System -->
-<div class="modal fade" id="modalEDC" tabindex="-1" aria-labelledby="modalEDCLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content border-0 rounded shadow">
-      <div class="modal-header bg-secondary text-white">
-        <h5 class="modal-title" id="modalEDCLabel">EDC System (In Development)</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-<div class="modal-body p-4">
-  <img src="images/project4.png" class="img-fluid rounded mb-3" alt="EDC System Screenshot" />
-
-  <p><strong>Overview:</strong><br>
-    An electronic data capture system currently in development, designed to support offline and online data collection
-    for research and public health interventions.
-  </p>
-
-  <ul class="mb-3">
-    <li>Form builder with constraints, logic, and calculations</li>
-    <li>Support for longitudinal + relational data collection</li>
-    <li>Offline mobile entry (Flutter app) and syncing</li>
-    <li>Audit trail, Excel export, and user role system</li>
-    <li>Integrated query and reminder management system</li>
-  </ul>
-
-  <p><strong>Building with:</strong><br>
-    Flask, SQLite, SQLAlchemy, Bootstrap 5, Flutter (Mobile)
-  </p>
-
-  <a href="#" class="btn btn-outline-secondary disabled">Preview Not Available</a>
-</div>
-
-    </div>
-  </div>
-</div>
-
-
-<!-- Skills Section -->
-<!-- <section id="skills" class="py-5 bg-light">
-  <div class="container" data-aos="fade-up">
-    <div class="card border-0 shadow-sm rounded-4 p-4">
-      <h2 class="text-center mb-4">Technical Skills & Tools</h2>
-      <div class="row g-4 text-center">
-
-      <div class="col-6 col-md-3">
-        <i class="bi bi-filetype-py display-6 text-primary"></i>
-        <h6 class="mt-2">Python</h6>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <i class="bi bi-graph-up display-6 text-success"></i>
-        <h6 class="mt-2">R / STATA / SPSS</h6>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <i class="bi bi-database-fill-gear display-6 text-warning"></i>
-        <h6 class="mt-2">SQL (MySQL / Oracle / PG)</h6>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <i class="bi bi-bar-chart-steps display-6 text-danger"></i>
-        <h6 class="mt-2">Power BI / Tableau</h6>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <i class="bi bi-filetype-html display-6 text-danger"></i>
-        <h6 class="mt-2">HTML / CSS</h6>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <i class="bi bi-filetype-js display-6 text-warning"></i>
-        <h6 class="mt-2">JavaScript / Bootstrap</h6>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <i class="bi bi-boxes display-6 text-info"></i>
-        <h6 class="mt-2">REDCap / Jinja2</h6>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <i class="bi bi-diagram-3 display-6 text-success"></i>
-        <h6 class="mt-2">ArcGIS / QGIS</h6>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <i class="bi bi-file-earmark-excel display-6 text-success"></i>
-        <h6 class="mt-2">Excel / VBA</h6>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <i class="bi bi-git display-6 text-dark"></i>
-        <h6 class="mt-2">Git / GitHub</h6>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<section id="skills" class="py-5 bg-light">
+<!-- SKills -->
+<section id="skills" class="pt-3 pb-4 bg-section">
   <div class="container" data-aos="fade-up">
     <div class="card border-0 shadow-sm rounded-4 p-4">
       <h2 class="text-center mb-4">Technical Skills & Tools (Developer Experience)</h2>
@@ -447,17 +241,6 @@
           </div>
         </div>
 
-        <!-- Git / GitHub 
-        <div class="col-md-6">
-          <div class="d-flex align-items-center mb-2">
-            <i class="bi bi-git fs-3 text-dark me-3"></i>
-            <h6 class="mb-0">Git / GitHub</h6>
-          </div>
-          <div class="progress">
-            <div class="progress-bar bg-secondary" style="width: 70%;">Working Knowledge</div>
-          </div>
-        </div>-->
-
       </div>
     </div>
   </div>
@@ -465,7 +248,7 @@
 
 
 <!-- Certifications -->
-<section id="certifications" class="py-5 bg-light">
+<section id="certifications" class="pt-3 pb-4 bg-section">
   <div class="container" data-aos="fade-right">
     <div class="card border-0 shadow-sm rounded-4 p-4">
       <h2 class="text-center mb-4">
@@ -557,7 +340,7 @@
 
 
 <!-- Projects -->
-<section id="projects" class="py-5">
+<section id="projects" class="pt-3 pb-4 bg-section">
   <div class="container" data-aos="fade-up">
     <div class="card border-0 shadow-sm rounded-4 p-4">
       <h2 class="text-center mb-4">Projects</h2>
@@ -620,8 +403,9 @@
   </div>
 </section>
 
+
 <!-- Testimonials -->
-<section id="testimonials" class="py-5">
+<section id="testimonials" class="pt-3 pb-4 bg-section">
   <div class="container" data-aos="fade-up">
     <div class="card border-0 shadow-sm rounded-4 p-4">
       <h2 class="text-center mb-4">
@@ -632,11 +416,13 @@
 
         <!-- Testimonial 1 -->
         <div class="col-md-6">
-          <div class="bg-light rounded-4 p-4 h-100 shadow-sm testimonial-card position-relative">
-            <i class="bi bi-quote text-primary fs-1 position-absolute top-0 start-0 m-3 opacity-25"></i>
-            <p class="mb-4">
-              "William consistently delivers clean, insightful analytics. He’s dependable and solution-focused."
-            </p>
+          <div class="bg-light rounded-4 p-4 h-100 shadow-sm testimonial-card">
+            <div class="d-flex">
+              <i class="bi bi-quote fs-2 text-primary me-3"></i>
+              <p class="mb-4 fst-italic text-muted">
+                William consistently delivers clean, insightful analytics. He’s dependable and solution-focused.
+              </p>
+            </div>
             <div class="fw-medium text-muted small text-end">
               — Dr. Samuel Adjei<br>
               <span class="fst-italic">Senior Epidemiologist</span>
@@ -646,11 +432,13 @@
 
         <!-- Testimonial 2 -->
         <div class="col-md-6">
-          <div class="bg-light rounded-4 p-4 h-100 shadow-sm testimonial-card position-relative">
-            <i class="bi bi-quote text-primary fs-1 position-absolute top-0 start-0 m-3 opacity-25"></i>
-            <p class="mb-4">
-              "His REDCap and dashboard integration project was instrumental in our malaria study efficiency."
-            </p>
+          <div class="bg-light rounded-4 p-4 h-100 shadow-sm testimonial-card">
+            <div class="d-flex">
+              <i class="bi bi-quote fs-2 text-primary me-3"></i>
+              <p class="mb-4 fst-italic text-muted">
+                His REDCap and dashboard integration project was instrumental in our malaria study efficiency.
+              </p>
+            </div>
             <div class="fw-medium text-muted small text-end">
               — Isaac Yeboah Addo<br>
               <span class="fst-italic">Research Supervisor</span>
@@ -660,12 +448,14 @@
 
         <!-- Testimonial 3 -->
         <div class="col-md-6">
-          <div class="bg-light rounded-4 p-4 h-100 shadow-sm testimonial-card position-relative">
-            <i class="bi bi-quote text-primary fs-1 position-absolute top-0 start-0 m-3 opacity-25"></i>
-            <p class="mb-4">
-              "William's ability to build custom data tools with clean UI and precise functionality is unmatched. His ethics app
-              streamlined our entire review process."
-            </p>
+          <div class="bg-light rounded-4 p-4 h-100 shadow-sm testimonial-card">
+            <div class="d-flex">
+              <i class="bi bi-quote fs-2 text-primary me-3"></i>
+              <p class="mb-4 fst-italic text-muted">
+                William's ability to build custom data tools with clean UI and precise functionality is unmatched.
+                His ethics app streamlined our entire review process.
+              </p>
+            </div>
             <div class="fw-medium text-muted small text-end">
               — Beatrice Naa Adjeley, MPH<br>
               <span class="fst-italic">IRB Coordinator, NHRC</span>
@@ -675,12 +465,14 @@
 
         <!-- Testimonial 4 -->
         <div class="col-md-6">
-          <div class="bg-light rounded-4 p-4 h-100 shadow-sm testimonial-card position-relative">
-            <i class="bi bi-quote text-primary fs-1 position-absolute top-0 start-0 m-3 opacity-25"></i>
-            <p class="mb-4">
-              "His attention to data integrity, user roles, and backend automation is exceptional. William elevated the quality
-              of our research workflows."
-            </p>
+          <div class="bg-light rounded-4 p-4 h-100 shadow-sm testimonial-card">
+            <div class="d-flex">
+              <i class="bi bi-quote fs-2 text-primary me-3"></i>
+              <p class="mb-4 fst-italic text-muted">
+                His attention to data integrity, user roles, and backend automation is exceptional.
+                William elevated the quality of our research workflows.
+              </p>
+            </div>
             <div class="fw-medium text-muted small text-end">
               — Dr. Priscilla Ayim, PhD<br>
               <span class="fst-italic">Senior Data Manager</span>
@@ -688,17 +480,166 @@
           </div>
         </div>
 
-
       </div>
     </div>
   </div>
 </section>
 
 
+<!-- Modal: SOP Management App -->
+<div class="modal fade" id="modalSOP" tabindex="-1" aria-labelledby="modalSOPLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded shadow">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalSOPLabel">Standard Operating Procedure Management App</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-4">
+        <img src="images/project2b.png" class="img-fluid rounded mb-3" alt="SOP App Screenshot" />
+
+        <p><strong>Overview:</strong><br>
+          A secure, role-based web platform for managing SOPs, approvals, version history, and user acknowledgment
+          within
+          research environments.
+        </p>
+
+        <ul class="mb-3">
+          <li>Role-based access: Admin, HOD, Officer, Guest, etc.</li>
+          <li>Upload and approve SOPs with version control</li>
+          <li>Assign SOPs to specific users and track acknowledgments</li>
+          <li>Amendment management with two-stage review and closure</li>
+          <li>Dashboard with SOP stats and user task tracking</li>
+          <li>Audit trail and Excel export of logs</li>
+        </ul>
+
+        <p><strong>Built with:</strong><br>
+          Flask (Python), SQLite, Jinja2, Bootstrap 5, SQLAlchemy, SweetAlert, HTML/CSS
+        </p>
+
+        <a href="https://github.com/WilliamDormechele/sop_app" target="_blank" class="btn btn-outline-primary">
+          🔗 View on GitHub
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal: REDCap Integration -->
+<div class="modal fade" id="modalREDCap" tabindex="-1" aria-labelledby="modalREDCapLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded shadow">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="modalREDCapLabel">REDCap + SMS Integration</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-4">
+        <img src="images/project2.jpg" class="img-fluid rounded mb-3" alt="REDCap Integration Screenshot" />
+        <p><strong>Overview:</strong><br>
+          A backend integration that connects REDCap survey submissions with the Hubtel SMS API to automate real-time
+          SMS
+          notifications for research participants.
+        </p>
+
+        <ul class="mb-3">
+          <li>Connects REDCap via API to Hubtel SMS platform</li>
+          <li>Triggers SMS alerts when form is submitted or updated</li>
+          <li>Flexible message templates with phone field mapping</li>
+          <li>Logs all messages sent for monitoring</li>
+        </ul>
+
+        <p><strong>Building with:</strong><br>
+          Python, REDCap API, Hubtel API, JSON, Flask
+        </p>
+        <a href="#" class="btn btn-outline-warning disabled">Under Development</a>
+        <!-- <a href="https://github.com/WilliamDormechele/REDCap" target="_blank" class="btn btn-outline-success">
+    🔗 View on GitHub
+  </a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: IRB Portal -->
+<div class="modal fade" id="modalIRB" tabindex="-1" aria-labelledby="modalIRBLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded shadow">
+      <div class="modal-header bg-warning text-white">
+        <h5 class="modal-title" id="modalIRBLabel">Research Ethics Portal</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body p-4">
+        <img src="images/project3.jpg" class="img-fluid rounded mb-3" alt="IRB Portal Screenshot" />
+
+        <p><strong>Overview:</strong><br>
+          A full-featured IRB portal for managing research protocol submissions, reviewer workflows, board approvals,
+          and
+          ethical clearance reporting.
+        </p>
+
+        <ul class="mb-3">
+          <li>Submit, review, and approve research protocols</li>
+          <li>Reviewer dashboards with deadlines and PDF export</li>
+          <li>Admin tools for comment collation and resolution tracking</li>
+          <li>Custom audit trail for decisions, edits, and reminders</li>
+          <li>Email notifications for re-reviews and submissions</li>
+        </ul>
+
+        <p><strong>Building with:</strong><br>
+          Flask, SQLite, SQLAlchemy, Jinja2, HTML/CSS, Bootstrap 5
+        </p>
+
+        <!--  <a href="#" class="btn btn-outline-warning disabled">Under Development</a> -->
+        <a href="https://github.com/WilliamDormechele/IRB-Portal" target="_blank" class="btn btn-outline-success">
+          🔗 View on GitHub
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal: EDC System -->
+<div class="modal fade" id="modalEDC" tabindex="-1" aria-labelledby="modalEDCLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded shadow">
+      <div class="modal-header bg-secondary text-white">
+        <h5 class="modal-title" id="modalEDCLabel">EDC System (In Development)</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-4">
+        <img src="images/project4.png" class="img-fluid rounded mb-3" alt="EDC System Screenshot" />
+
+        <p><strong>Overview:</strong><br>
+          An electronic data capture system currently in development, designed to support offline and online data
+          collection
+          for research and public health interventions.
+        </p>
+
+        <ul class="mb-3">
+          <li>Form builder with constraints, logic, and calculations</li>
+          <li>Support for longitudinal + relational data collection</li>
+          <li>Offline mobile entry (Flutter app) and syncing</li>
+          <li>Audit trail, Excel export, and user role system</li>
+          <li>Integrated query and reminder management system</li>
+        </ul>
+
+        <p><strong>Building with:</strong><br>
+          Flask, SQLite, SQLAlchemy, Bootstrap 5, Flutter (Mobile)
+        </p>
+
+        <a href="#" class="btn btn-outline-secondary disabled">Preview Not Available</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 
   <!-- Publications --> 
-<section id="publications" class="py-5 bg-light">
+<section id="publications" class="pt-3 pb-4 bg-section">
   <div class="container" data-aos="fade-up">
     <div class="card border-0 shadow-sm rounded-4 p-4">
       <h2 class="text-center mb-4">
@@ -823,11 +764,8 @@
 </section>
 
 
-
-
-
-  <!-- Contact -->
-<section id="contact" class="py-5 bg-light">
+<!-- Contact -->
+<section id="contact" class="pt-3 pb-4 bg-section">
   <div class="container" data-aos="fade-up">
     <div class="card border-0 shadow-sm rounded-4 p-4">
       <h2 class="text-center mb-4">📬 Contact Me</h2>
@@ -835,7 +773,7 @@
 
         <!-- Email Card -->
         <div class="col-md-6 col-lg-4">
-          <div class="card h-100 border-0 shadow-sm text-center py-4 hover-zoom">
+          <div class="card h-100 border-0 text-center py-4 hover-zoom contact-card">
             <i class="bi bi-envelope-fill text-primary fs-3 mb-2"></i>
             <h6 class="fw-semibold">Email</h6>
             <p class="mb-0">
@@ -848,7 +786,7 @@
 
         <!-- LinkedIn Card -->
         <div class="col-md-6 col-lg-4">
-          <div class="card h-100 border-0 shadow-sm text-center py-4 hover-zoom">
+          <div class="card h-100 border-0 text-center py-4 hover-zoom contact-card">
             <i class="bi bi-linkedin text-primary fs-3 mb-2"></i>
             <h6 class="fw-semibold">LinkedIn</h6>
             <p class="mb-0">
@@ -862,7 +800,7 @@
 
         <!-- GitHub Card -->
         <div class="col-md-6 col-lg-4">
-          <div class="card h-100 border-0 shadow-sm text-center py-4 hover-zoom">
+          <div class="card h-100 border-0 text-center py-4 hover-zoom contact-card">
             <i class="bi bi-github fs-3 mb-2"></i>
             <h6 class="fw-semibold">GitHub</h6>
             <p class="mb-0">
@@ -878,18 +816,16 @@
   </div>
 </section>
 
-
-
-
-
+<!-- Footer -->
   <footer class="text-center py-3 bg-dark text-white">
     <p>&copy; 2025 William Dormechele. All Rights Reserved.</p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="js/script.js"></script>
-</body>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="js/script.js"></script>
 
+
+</body>
 </html>
