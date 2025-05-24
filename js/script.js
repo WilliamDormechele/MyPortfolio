@@ -24,3 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("darkMode", toggle.checked);
   });
 });
+
+
+
+  // Show or hide scroll-to-top
+  window.addEventListener("scroll", function () {
+    const btn = document.querySelector(".scroll-to-top");
+    if (window.scrollY > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  });
+
