@@ -436,3 +436,17 @@ body.dark-mode #projects .project-card.border-dashed {
 .scroll-to-top:hover {
   color: #0a58ca;
 }
+
+/* ==== Fix certification card h6 color for best contrast in all modes ==== */
+.section-card h6.fw-semibold,
+.card h6.fw-semibold {
+  color: #000000;
+  letter-spacing: -0.2px;
+}
+
+body.dark-mode .section-card h6.fw-semibold,
+body.dark-mode .card h6.fw-semibold {
+  color: #000000 !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+
