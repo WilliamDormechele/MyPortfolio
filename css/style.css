@@ -450,3 +450,31 @@ body.dark-mode .card h6.fw-semibold {
   text-shadow: 0 1px 3px rgba(0,0,0,0.25);
 }
 
+/* ==== Modal Content Contrast Fix for Dark Mode ==== */
+body.dark-mode .modal-content {
+  background: #23272f !important;  /* Slightly lighter than main background for focus */
+  color: #f2f4f8 !important;       /* Bright, modern off-white */
+  border: none;
+}
+
+body.dark-mode .modal-content p,
+body.dark-mode .modal-content li,
+body.dark-mode .modal-content ul,
+body.dark-mode .modal-content strong,
+body.dark-mode .modal-content span,
+body.dark-mode .modal-content em {
+  color: #f2f4f8 !important;        /* Consistent, readable text */
+}
+
+body.dark-mode .modal-content strong,
+body.dark-mode .modal-content b {
+  color: #9ecbff !important;        /* Modern blue for strong/bold (e.g., headings like "Overview:") */
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+  background: #21242c !important;   /* Slight contrast with modal body */
+  color: #fff !important;
+  border: none;
+}
+
