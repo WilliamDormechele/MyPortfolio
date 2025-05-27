@@ -478,3 +478,64 @@ body.dark-mode .modal-footer {
   border: none;
 }
 
+/* ==== Fix .text-muted in dark mode for strong contrast ==== */
+body.dark-mode .text-muted {
+  color: #b8c2cc !important;   /* Modern, gentle light gray-blue */
+}
+
+body.dark-mode .testimonial-card .fw-medium.text-muted {
+  color: #c7d7ea !important;   /* Slightly brighter for authors */
+  font-weight: 500;
+}
+
+body.dark-mode .testimonial-card .fst-italic {
+  color: #b2c1d1 !important;   /* A bit lighter for italic job title */
+}
+
+/* ==== Bulletproof Testimonial Author Contrast in Dark Mode ==== */
+
+/* Universal .text-muted fix for dark mode (everywhere on the page) */
+body.dark-mode .text-muted,
+body.dark-mode .text-muted *,
+body.dark-mode .testimonial-card .text-muted,
+body.dark-mode .testimonial-card .fw-medium.text-muted,
+body.dark-mode .testimonial-card .fw-medium.text-muted *,
+body.dark-mode .testimonial-card .fst-italic,
+body.dark-mode .testimonial-card .fst-italic * {
+  color: #c8d2e0 !important;         /* Bright gentle gray-blue, high contrast */
+  opacity: 1 !important;
+}
+
+/* For extra pop on author line only, use a bolder shade */
+body.dark-mode .testimonial-card .fw-medium.text-muted {
+  color: #e1e7ef !important;         /* Bright white-blue */
+  font-weight: 600 !important;
+}
+
+/* Italic job titles (softer but still readable) */
+body.dark-mode .testimonial-card .fst-italic {
+  color: #aac8e4 !important;
+  font-style: italic !important;
+  opacity: 1 !important;
+}
+
+/* In dark mode, certification cards should be dark, not white */
+body.dark-mode .bg-white,
+body.dark-mode .section-card .bg-white {
+  background: #23272f !important;   /* Modern dark card */
+  color: #f4f6fb !important;
+  border-color: #222 !important;
+}
+
+/* === Certification Card Heading: White in Dark Mode === */
+body.dark-mode .section-card .bg-white h6.fw-semibold,
+body.dark-mode .section-card .bg-white h6,
+body.dark-mode .bg-white h6.fw-semibold,
+body.dark-mode .bg-white h6,
+body.dark-mode .card .bg-white h6.fw-semibold,
+body.dark-mode .card .bg-white h6,
+body.dark-mode .section-card .h6.fw-semibold,
+body.dark-mode .section-card h6.fw-semibold,
+body.dark-mode .card h6.fw-semibold {
+  color: #fff !important;
+}
